@@ -6,6 +6,14 @@ import Example3 from './components/Example3.vue';
 import Example4 from './components/Example4.vue';
 import Example5 from './components/Example5.vue';
 import Example6 from './components/Example6.vue';
+import Example7 from './components/Example7.vue';
+import Example8 from './components/Example8.vue';
+import Example9 from './components/Example9.vue';
+import Example10 from './components/Example10.vue';
+import Example11 from './components/Example11.vue';
+import Example12 from './components/Example12.vue'
+import Example13 from './components/Example13.vue';
+import Example14 from './components/Example14.vue';
 export default {
   components:{
     MyButton,
@@ -14,7 +22,15 @@ export default {
     Example3,
     Example4,
     Example5,
-    Example6
+    Example6,
+    Example7,
+    Example8,
+    Example9,
+    Example10,
+    Example11,
+    Example12,
+    Example13,
+    Example14
   },
   data() {
     return {
@@ -88,6 +104,32 @@ export default {
    <Example4 />
    <Example5 />
    <Example6 />
+   <br/> <br/>
+   <Example7 />
+   <Example8 />
+   <Example9 />
+   <Example10 />
+   <Example11 />
+   <Example12>
+    <h2>Hello Vue slots!!</h2>
+    <p>This content is inserted into the slot.</p>
+   </Example12>
+   <br/>
+   <Example13>
+    <template v-slot:header >
+      <h2>Card Header</h2>
+    </template>
+    <p>Hey this main content</p>
+    <template v-slot:footer>
+      <p>Card Footer</p>
+    </template>
+   </Example13>
+   <Example14 v-slot:default=" slotProps">
+    <p>{{ slotProps.user.name }}</p>
+    <p>{{ slotProps.user.age }}</p>
+   </Example14>
+
+
 </template>
 <style scoped>
 button {
