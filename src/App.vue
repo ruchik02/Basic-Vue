@@ -14,6 +14,9 @@ export default {
     decrement(){
       this.count--;
 
+    },
+    changeMessage(){
+      this.name = "You clicked the button!!"
     }
   }
 }
@@ -23,6 +26,7 @@ export default {
   <h2>Counter: {{count  }} </h2>
   <button @click="increment">+</button>
   <button @click="decrement">-</button>
+  <button @click="changeMessage">Click Me</button>
 </template>
 <style scoped>
 button {
