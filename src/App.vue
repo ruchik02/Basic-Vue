@@ -1,10 +1,12 @@
 <script>
 import MyButton from './components/MyButton.vue';
 import Example1 from './components/Example1.vue';
+import Example2 from './components/Example2.vue';
 export default {
   components:{
     MyButton,
-    Example1
+    Example1,
+    Example2
   },
   data() {
     return {
@@ -13,6 +15,7 @@ export default {
       status: 'pending',
       result: true,
       message: "",
+      tasks: ["one", "two", "three", "four", "five", "six"]
     }
   },
   methods: {
@@ -47,6 +50,11 @@ export default {
   <p>You typed: {{ message }}</p>
   <br>
   <Example1 />
+  <h3>Tasks</h3>
+  <ul>
+    <li v-for="task in tasks" :key="task">{{ task }}</li>
+  </ul>
+  <Example2 />
 
 </template>
 <style scoped>
