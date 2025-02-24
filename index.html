@@ -10,15 +10,23 @@
     <div id="app">{{message}}</div>
     <script>
         // way 1
-        const app = Vue.createApp({
-            data() {
-                return {
-                    message: 'Hello world!!'
-                }
+        // const app = Vue.createApp({
+        //     data() {
+        //         return {
+        //             message: 'Hello world!!'
+        //         }
+        //     }
+        // });
+        // app.mount('#app');
+    //    way 2
+    const { createApp } = Vue
+    createApp({
+        data(){
+            return {
+                message: 'hello!'
             }
-        });
-        app.mount('#app');
-    
+        }
+    }).mount('#app');
     </script>
 </body>
 </html>
