@@ -7,7 +7,10 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 <body>
-    <div id="app">{{message}}</div>
+    <div id="app">
+        <h1>{{message}}</h1>
+        <button @click="clickMe">Click Me!!</button>
+    </div>
     <script>
         // way 1
         // const app = Vue.createApp({
@@ -24,6 +27,12 @@
         data(){
             return {
                 message: 'hello!'
+            }
+        },
+        methods: {
+            clickMe(){
+                console.log('button Clicked!!');
+                this.message = 'Updated Message!'
             }
         }
     }).mount('#app');
