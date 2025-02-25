@@ -10,7 +10,11 @@
 // import Example16 from './components/Example16.vue';
 // import Example17 from './components/Example17.vue';
 // import Example24 from './components/Example24.vue'
-import Example25 from './components/Example25.vue';
+// import Example25 from './components/Example25.vue';
+// import WatcherExample from './components/WatcherExample.vue';
+// import Example26 from './components/Example26.vue';
+// import Example27 from './components/Example27.vue';
+import Example28 from './components/Example28.vue';
 
 export default {
   components: {
@@ -25,7 +29,11 @@ export default {
     // Example22,
     // Example23,
     // Example24,
-    Example25
+    // Example25
+    // WatcherExample,
+    // Example26
+    // Example27
+    Example28
   }
 }
 </script>
@@ -41,5 +49,9 @@ export default {
        <!-- <Example22 /> -->
        <!-- <Example23 /> -->
         <!-- <Example24 /> -->
-        <Example25 />
+        <!-- <Example25 /> -->
+         <!-- <WatcherExample /> -->
+          <!-- <Example26 /> -->
+           <!-- <Example27 /> -->
+            <Example28 />
 </template>
